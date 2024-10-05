@@ -8,7 +8,7 @@ const user = useUser();
     <button
       v-if="user"
       @click="signOut"
-      class="absolute top-4 right-4 text-white bg-amber-600 hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 transition px-2 py-1 rounded-full size-10"
+      class="absolute right-4 top-4 size-10 rounded-full bg-amber-600 px-2 py-1 text-white transition hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ const user = useUser();
         fill="currentColor"
       ><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" /></svg>
     </button>
-    <main class="flex items-center justify-center h-screen w-screen">
+    <main class="flex h-screen w-screen items-center justify-center">
       <slot />
     </main>
   </div>

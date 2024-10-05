@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { signIn } = useAuth();
 
-const signInWithCredentials = async (event: SubmitEvent) => {
+const signInWithCredentials = async (event: Event) => {
   const formData = new FormData(event.target as HTMLFormElement);
 
   const credentials = {
@@ -16,7 +16,7 @@ const signInWithCredentials = async (event: SubmitEvent) => {
 <template>
   <form
     @submit.prevent="signInWithCredentials"
-    class="max-w-lg w-full space-y-4 max-sm:px-4"
+    class="w-full max-w-lg space-y-4 max-sm:px-4"
   >
     <input
       id="username"
